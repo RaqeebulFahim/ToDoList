@@ -21,7 +21,8 @@ add.addEventListener('click',(e)=>{
 
     console.log(newtask);
 
-    newList.innerHTML+=`<span class="d-flex align-items-end"><li class="m-0">${newtask.value} </li> <button class="del btn btn-sm btn-danger" style=" color: white; ">X</button></span>`;
+   
+    newList.innerHTML+=`<span class="d-flex justify-content-between"><li>${newtask.value} </li><button class="del btn btn-sm btn-danger m-1" style=" color: white; ">X</button></span>`;
     newtask.value='';
 
     let del=document.querySelectorAll(".del");
